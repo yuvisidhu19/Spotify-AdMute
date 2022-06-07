@@ -11,7 +11,7 @@ cid = os.getenv('cid')
 secret = os.getenv('secret')
 username = os.getenv('name')
 
-#Authorization (our browser will pop-up for a second)
+#Authorization (your browser will pop-up for a second)
 scope = "user-read-currently-playing"
 redirect_uri = "http://localhost:8888/callback"
 token = util.prompt_for_user_token(username, scope, cid, secret, redirect_uri)
